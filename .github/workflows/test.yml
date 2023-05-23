@@ -13,3 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: creyD/autoflake_action@master
+      with:
+        options: -r --in-place --remove-all-unused-imports
